@@ -1,3 +1,4 @@
+%An attempt to read the data in MATLAB
 % close all; clear all; clc;
 % path = 'D:\BCI_EEG\MelvinTestBenchData\edf1\MelvinEditted.csv';
 % path = 'D:\BCI_EEG\BCIData\Eddo\EddoEditted.csv';
