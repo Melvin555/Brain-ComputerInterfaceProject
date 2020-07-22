@@ -1,3 +1,6 @@
+" This is a documentation to add vim into the new environment,
+" it is optimized for python environment
+
 set nocompatible              " required
 filetype off                  " required
 
