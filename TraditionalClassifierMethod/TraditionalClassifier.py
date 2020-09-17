@@ -56,7 +56,7 @@ from mne import io, compute_raw_covariance, read_events
 from mne.preprocessing import Xdawn
 from mne.viz import plot_epochs_image
 from mne.baseline import rescale
-from mne.stats import _bootstrap_ci
+#from mne.stats import _bootstrap_ci
 from mne.decoding import Vectorizer
 from mne.viz import tight_layout
 from mne.decoding import UnsupervisedSpatialFilter
@@ -163,13 +163,13 @@ def plot_confusion_matrix_melv(cm, classes,
 event_ids = dict(zero=4, one=5)
 subject = 1
 tmin, tmax = 10, 20
-montage = mne.channels.read_montage('standard_1020')
+montage = mne.channels.Montage('standard_1020')
 d1 = {}
 d2 = {}
 for ext in range(100):
-    d1['raw_zero'+str(ext)] = mne.io.read_raw_edf('F:\BCI_Data\Melvin\zero\exp'+str(ext)+'\exp'+str(ext)+'.edf',preload=True)
+    d1['raw_zero'+str(ext)] = mne.io.read_raw_edf('C:\\Users\\mharsono\\Downloads\\Melvin_Researh\\Brain-ComputerInterfaceProject\\SampleData\\zero\\exp'+str(ext)+'\exp'+str(ext)+'.edf',preload=True)
 for ext in range(100):
-    d2['raw_one'+str(ext)] = mne.io.read_raw_edf('F:\BCI_Data\Melvin\one\exp'+str(ext)+'\exp'+str(ext)+'.edf',preload=True)
+    d2['raw_one'+str(ext)] = mne.io.read_raw_edf('C:\\Users\\mharsono\\Downloads\\Melvin_Researh\\Brain-ComputerInterfaceProject\\SampleData\\one\\exp'+str(ext)+'\exp'+str(ext)+'.edf',preload=True)
 
 list_zero = []
 list_one = []
