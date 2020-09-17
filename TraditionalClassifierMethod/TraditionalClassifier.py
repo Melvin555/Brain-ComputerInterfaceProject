@@ -29,7 +29,7 @@ from sklearn.discriminant_analysis import LinearDiscriminantAnalysis
 from sklearn.model_selection import StratifiedKFold, cross_val_score, ShuffleSplit
 from sklearn.pipeline import make_pipeline
 from sklearn.preprocessing import LabelEncoder
-from sklearn.cross_validation import KFold
+from sklearn.model_selection import KFold
 from sklearn.linear_model import LogisticRegression
 from sklearn.metrics import classification_report, confusion_matrix, average_precision_score
 from sklearn.preprocessing import MinMaxScaler

@@ -29,8 +29,8 @@ tmin, tmax = 0, 40.
 event_id = dict(zero=4)
 subject = 1
 
-raw0 = read_raw_edf('F:\\BCI_EEG\\BCIData\\LiCui\\licui0.edf', preload=True ,stim_channel='auto')
-raw1 = read_raw_edf('F:\\BCI_EEG\\BCIData\\LiCui\\licui1.edf', preload=True ,stim_channel='auto')
+raw0 = read_raw_edf('C:\\Users\\mharsono\\Downloads\\Melvin_Researh\\Brain-ComputerInterfaceProject\\SampleData\\zero\\exp3\\exp3.edf', preload=True ,stim_channel='auto')
+raw1 = read_raw_edf('C:\\Users\\mharsono\\Downloads\\Melvin_Researh\\Brain-ComputerInterfaceProject\\SampleData\\one\\exp3\\exp3.edf', preload=True ,stim_channel='auto')
 raw_files = [raw0,raw1]
 raw = concatenate_raws(raw_files)
     
